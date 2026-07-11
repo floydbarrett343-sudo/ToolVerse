@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Image Compressor - ToolVerse</title>
+
+
+<meta name="description"
+content="Compress images online without losing quality. Reduce image size easily with ToolVerse Image Compressor.">
+
+
+<link rel="stylesheet" href="../assets/css/variables.css">
+
+<link rel="stylesheet" href="../assets/css/tool-page.css">
+
+
+</head>
+
+
+<body>
+
+
+<header class="tool-header">
+
+<a href="../index.html">
+
+⚡ ToolVerse
+
+</a>
+
+</header>
+
+
+
+
+<section class="tool-section">
+
+
+<div class="tool-container">
+
+
+<h1>
+
+Image Compressor
+
+</h1>
+
+
+<p>
+
+Reduce image size while maintaining quality.
+
+</p>
+
+
+
+
+<div class="compress-box">
+
+
+
+<input 
+type="file"
+id="imageInput"
+accept="image/*">
+
+
+
+<img 
+id="preview"
+src=""
+alt="Image Preview">
+
+
+
+<div class="details">
+
+
+<p>
+
+Original Size:
+
+<span id="originalSize">
+0 KB
+</span>
+
+</p>
+
+
+
+<p>
+
+Compressed Size:
+
+<span id="compressedSize">
+0 KB
+</span>
+
+</p>
+
+
+</div>
+
+
+
+
+<label>
+
+Compression Quality
+
+</label>
+
+
+
+<input
+
+type="range"
+
+id="quality"
+
+min="10"
+
+max="100"
+
+value="70">
+
+
+<button id="compressBtn">
+
+Compress Image
+
+</button>
+
+
+
+<a 
+
+id="downloadBtn"
+
+download="compressed-image.jpg">
+
+Download Image
+
+</a>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<script src="../assets/js/image-compressor.js"></script>
+
+
+</body>
+
+</html>
