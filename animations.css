@@ -1,0 +1,584 @@
+/*==================================
+ADVANCED ANIMATIONS
+==================================*/
+
+
+/*==================================
+PAGE LOAD
+==================================*/
+
+
+.page-load{
+
+    animation:pageLoad .8s ease forwards;
+
+}
+
+
+
+@keyframes pageLoad{
+
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+
+/*==================================
+GRADIENT ANIMATION
+==================================*/
+
+
+.gradient-animation{
+
+
+    background-size:200% 200%;
+
+    animation:gradientMove 5s ease infinite;
+
+
+}
+
+
+
+@keyframes gradientMove{
+
+
+    0%{
+
+        background-position:0% 50%;
+
+    }
+
+
+    50%{
+
+        background-position:100% 50%;
+
+    }
+
+
+    100%{
+
+        background-position:0% 50%;
+
+    }
+
+
+}
+
+
+
+
+
+/*==================================
+FADE ANIMATIONS
+==================================*/
+
+
+.fade-in{
+
+
+    animation:fadeIn 1s ease forwards;
+
+
+}
+
+
+
+@keyframes fadeIn{
+
+
+    from{
+
+        opacity:0;
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+    }
+
+
+}
+
+
+
+
+.fade-down{
+
+
+    animation:fadeDown .8s ease forwards;
+
+
+}
+
+
+
+@keyframes fadeDown{
+
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-40px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+
+}
+
+
+
+
+/*==================================
+ZOOM EFFECT
+==================================*/
+
+
+.zoom-in{
+
+
+    animation:zoomIn .8s ease;
+
+
+}
+
+
+
+@keyframes zoomIn{
+
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.8);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+
+}
+
+
+
+
+/*==================================
+BUTTON ANIMATION
+==================================*/
+
+
+.btn{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+.btn::before{
+
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:100%;
+
+    background:linear-gradient(
+
+    120deg,
+
+    transparent,
+
+    rgba(255,255,255,.5),
+
+    transparent
+
+    );
+
+
+    transition:.6s;
+
+
+}
+
+
+
+.btn:hover::before{
+
+
+    left:100%;
+
+
+}
+
+
+
+
+/*==================================
+CARD ANIMATION
+==================================*/
+
+
+.tool-card,
+.category-card{
+
+
+    animation:cardAppear .8s ease;
+
+
+}
+
+
+
+
+@keyframes cardAppear{
+
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+
+}
+
+
+
+
+/*==================================
+FLOATING SHAPES
+==================================*/
+
+
+.shape{
+
+
+    position:absolute;
+
+    border-radius:50%;
+
+    animation:shapeFloat 8s infinite ease-in-out;
+
+
+}
+
+
+
+
+@keyframes shapeFloat{
+
+
+    0%{
+
+        transform:translateY(0) rotate(0deg);
+
+    }
+
+
+    50%{
+
+        transform:translateY(-40px) rotate(180deg);
+
+    }
+
+
+    100%{
+
+        transform:translateY(0) rotate(360deg);
+
+    }
+
+
+}
+
+
+
+
+
+/*==================================
+GLOW EFFECT
+==================================*/
+
+
+.glow{
+
+
+    animation:glowEffect 3s infinite;
+
+
+}
+
+
+
+
+@keyframes glowEffect{
+
+
+    0%{
+
+        box-shadow:0 0 10px rgba(79,70,229,.2);
+
+    }
+
+
+    50%{
+
+        box-shadow:0 0 35px rgba(79,70,229,.5);
+
+    }
+
+
+    100%{
+
+        box-shadow:0 0 10px rgba(79,70,229,.2);
+
+    }
+
+
+}
+
+
+
+
+/*==================================
+BOUNCE
+==================================*/
+
+
+.bounce{
+
+
+    animation:bounce 2s infinite;
+
+
+}
+
+
+
+@keyframes bounce{
+
+
+    0%,
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+
+}
+
+
+
+
+
+/*==================================
+ROTATE
+==================================*/
+
+
+.rotate{
+
+
+    animation:rotate 8s linear infinite;
+
+
+}
+
+
+
+@keyframes rotate{
+
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+
+}
+
+
+
+
+
+/*==================================
+TEXT ANIMATION
+==================================*/
+
+
+.text-animation{
+
+
+    background:linear-gradient(
+
+    90deg,
+
+    var(--primary),
+
+    var(--secondary),
+
+    var(--primary)
+
+    );
+
+
+    background-size:200%;
+
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+
+    animation:textMove 4s infinite;
+
+
+}
+
+
+
+@keyframes textMove{
+
+
+    0%{
+
+        background-position:0%;
+
+    }
+
+
+    100%{
+
+        background-position:200%;
+
+    }
+
+
+}
+
+
+
+
+
+/*==================================
+SMOOTH HOVER
+==================================*/
+
+
+.smooth-hover{
+
+
+    transition:.4s ease;
+
+
+}
+
+
+
+.smooth-hover:hover{
+
+
+    transform:translateY(-8px);
+
+
+}
+
+
+
+
+
+/*==================================
+REDUCED MOTION SUPPORT
+==================================*/
+
+
+@media(prefers-reduced-motion:reduce){
+
+
+*{
+
+    animation:none!important;
+
+    transition:none!important;
+
+}
+
+
+}
